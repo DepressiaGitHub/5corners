@@ -5,7 +5,9 @@
   var body = document.querySelector('body');
 
   window.addEventListener('scroll', function () {
-    if (window.pageYOffset >= 1150) {
+    var offsetHeight = document.querySelector('.page-main__planet').offsetHeight;
+
+    if (window.pageYOffset >= offsetHeight) {
       menu.classList.add('page-header--white');
       body.classList.add('body--white');
     } else {

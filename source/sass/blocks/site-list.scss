@@ -3,10 +3,6 @@
   justify-content: flex-start;
   align-items: center;
   flex-grow: 1;
-  font-style: normal;
-  font-weight: 450;
-  font-size: 14px;
-  line-height: 17px;
 }
 
 .site-list__item {
@@ -14,6 +10,9 @@
 }
 
 .site-list__item a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
   padding: 20px 0;
   display: block;
   color: rgba(255, 255, 255, 0.5);
@@ -37,5 +36,17 @@
   &:hover,
   &:focus {
     color: #20afff;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .site-list__item {
+    margin-right: 40px;
+  }
+
+  .site-list__item a {
+    font-size: 10px;
+    line-height: 14px;
+    padding: 20px 0;
   }
 }

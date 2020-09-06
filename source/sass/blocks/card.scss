@@ -26,6 +26,7 @@
 .card__img {
   max-width: 756px;
   max-height: 334px;
+  margin: 0 auto;
 }
 
 .card__user-preview input {
@@ -108,5 +109,43 @@
   &:active {
     color: #20afff;
     opacity: 0.5;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .card {
+    padding: 45px 70px;
+  }
+
+  .card__body {
+    flex-direction: column;
+  }
+
+  .card__slogan {
+    margin: 0;
+    padding-top: 30px;
+    width: 600px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .card__user-preview {
+    margin-right: 0;
+  }
+
+  .card__user-menu {
+    margin-right: 0;
+    flex-wrap: wrap;
+    height: 200px;
+    align-items: center;
+  }
+
+  .card__button:first-of-type {
+    margin-top: 40px;
+  }
+
+  .card__user-menu > div {
+    margin-bottom: 0;
+    margin-top: 22px;
   }
 }

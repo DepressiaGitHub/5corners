@@ -3,10 +3,6 @@
   justify-content: flex-start;
   align-items: center;
   flex-grow: 1;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .job-list__item {
@@ -15,6 +11,9 @@
 }
 
 .job-list__item a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
   padding: 27px 0;
   display: block;
   color: #ffffff;
@@ -25,6 +24,7 @@
     outline: none;
     color: #20afff;
     text-decoration: underline;
+    font-weight: 600;
   }
 
   &:active {
@@ -64,10 +64,33 @@
   &:hover,
   &:focus {
     color: #20afff;
+    font-weight: 400;
   }
 }
 
 .page-header--white .job-list__item--sub-menu::before,
 .page-header--white .job-list__item--sub-menu::after {
   background-color: #004460;
+}
+
+@media (max-width: $desktop-width) {
+  .job-list__item {
+    margin-right: 20px;
+  }
+
+  .job-list__item a {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 20px 0;
+  }
+
+  .job-list__item--sub-menu::before {
+    width: 5px;
+    left: calc(50% - 3px);
+  }
+
+
+  .job-list__item--sub-menu::after {
+    width: 5px;
+  }
 }

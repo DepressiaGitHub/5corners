@@ -54,6 +54,7 @@ a.main-nav__make-offer {
     outline: none;
     color: #20afff;
     text-decoration: underline;
+    font-weight: 600;
   }
 
   &:active {
@@ -71,5 +72,17 @@ a.main-nav__make-offer {
   &:hover,
   &:focus {
     color: #20afff;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .main-nav__wrapper {
+    width: 900px;
+  }
+
+  a.main-nav__make-offer {
+    font-size: 12px;
+    line-height: 16px;
   }
 }

@@ -51,7 +51,7 @@
 #btn-3:checked ~ .main-slider__arrow-controls label[for="btn-1"] {
   position: absolute;
   content: "";
-  top: 330px;
+  top: 37%;
   right: 110px;
   width: 48px;
   height: 88px;
@@ -80,7 +80,7 @@
 #btn-3:checked ~ .main-slider__arrow-controls label[for="btn-2"] {
   position: absolute;
   content: "";
-  top: 330px;
+  top: 37%;
   left: 110px;
   width: 48px;
   height: 88px;
@@ -112,13 +112,34 @@
 
 .main-slider__item {
   margin-right: 60px;
-  width: 1700px;
   min-width: 1700px;
-  height: 750px;
+  min-height: 750px;
   background-color: #ffffff;
   border-radius: 40px;
 
   &:last-of-type {
     margin-right: 0;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .main-slider {
+    width: 900px;
+  }
+
+  .main-slider__item {
+    min-width: 900px;
+  }
+
+  #btn-1:checked ~ .main-slider__arrow-controls label[for="btn-2"],
+  #btn-2:checked ~ .main-slider__arrow-controls label[for="btn-3"],
+  #btn-3:checked ~ .main-slider__arrow-controls label[for="btn-1"] {
+    right: 10px;
+  }
+
+  #btn-1:checked ~ .main-slider__arrow-controls label[for="btn-3"],
+  #btn-2:checked ~ .main-slider__arrow-controls label[for="btn-1"],
+  #btn-3:checked ~ .main-slider__arrow-controls label[for="btn-2"] {
+    left: 10px;
   }
 }
