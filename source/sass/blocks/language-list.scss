@@ -1,0 +1,43 @@
+.language-list {
+  display: flex;
+  margin-right: 90px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  align-items: flex-start;
+  color: #88819d;
+  position: relative;
+}
+
+.language-list::before {
+  position: absolute;
+  content: "/";
+  top: 0;
+  left: 27px;
+}
+
+.language-list__item {
+  margin-right: 20px;
+}
+
+.language-list__item input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.language-list__item input:checked + label {
+  color: #20afff;
+}
+
+.page-header--white .language-list {
+  color: #b9b9b9;
+}

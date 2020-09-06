@@ -1,0 +1,56 @@
+.page-main {
+  background-color: #0099ef;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-top: 130px;
+}
+
+.page-main__planet {
+  background-color: #12033c;
+  margin: 0;
+  height: 1300px;
+  background-image: url("../img/stars.png"), url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 1920px;
+}
+
+.page-main__wrapper {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 100px 0;
+}
+
+.page-main__title {
+  color: #ffffff;
+  font-family: "AvenirNextCyr", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 98px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.page-main__slogan {
+  width: 800px;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.page-main__button {
+  width: 220px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 15px 25px;
+}
+
+.page-main__slides {
+  padding: 50px 0 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

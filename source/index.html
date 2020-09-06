@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/AvenirNextCyr-Medium.woff" as="font" crossorigin="anonymous">
+    <title>Тестовое задание для компании «5 Углов»</title>
+  </head>
+  <body class="body">
+    <header class="page-header">
+      <section class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list language-list">
+            <li class="language-list__item">
+              <input type="radio" id="en" name="page-language">
+              <label for="en">EN</label>
+            </li>
+            <li class="language-list__item">
+              <input type="radio" id="ru" name="page-language" checked>
+              <label for="ru">RU</label>
+            </li>
+          </ul>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="tel:+78792226310">+7 (87922) 2-63-10</a>
+            </li>
+            <li class="site-list__item">
+              <a href="">О компании</a>
+            </li>
+            <li class="site-list__item">
+              <a href="">Рекламодателям</a>
+            </li>
+            <li class="site-list__item">
+              <a href="">База знаний</a>
+            </li>
+            <li class="site-list__item">
+              <a href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list user-list--sign-in">
+            <li class="user-list__item">
+              <a href="#sign-in">Вход</a>
+            </li>
+            <li class="user-list__item">
+              <a href="">Регистрация</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list user-list--sign-out" style="display: none">
+            <li class="user-list__item">
+              <a href="">Имя пользователя</a>
+            </li>
+            <li class="user-list__item">
+              <a href="">Выйти</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main-nav">
+        <div class="main-nav__wrapper">
+          <a class="main-nav__logo" href="">
+            <span class="visually-hidden">Логотип компании Transhub 24.</span>
+          </a>
+          <ul class="main-nav__list job-list">
+            <li class="job-list__item job-list__item--sub-menu">
+              <a href="">Найти перевозчика</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="">Слон</a>
+                </li>
+                <li>
+                  <a href="">Верблют</a>
+                </li>
+                <li>
+                  <a href="">Осёл</a>
+                </li>
+                <li>
+                  <a href="">Мул</a>
+                </li>
+              </ul>
+            </li>
+            <li class="job-list__item">
+              <a href="">Поиск груза</a>
+            </li>
+            <li class="job-list__item">
+              <a href="">Перевозчики</a>
+            </li>
+            <li class="job-list__item">
+              <a href="">Грузоотправители</a>
+            </li>
+            <li class="job-list__item job-list__item--sub-menu">
+              <a href="">Покупка и аренда техники</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="">Трактор</a>
+                </li>
+                <li>
+                  <a href="">Комбайн</a>
+                </li>
+                <li>
+                  <a href="">Электроплуг</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <a class="main-nav__make-offer" href="">Разместить груз</a>
+        </div>
+      </section>
+    </header>
+    <main class="page-main">
+      <section class="page-main__planet">
+      </section>
+      <div class="page-main__wrapper">
+        <h1 class="page-main__title">Компания Transhub 24</h1>
+        <p class="page-main__slogan">Наша цель — свести контакты грузоперевозчиков и грузовладельцев в одном месте, сделав их максимально удобными.</p>
+        <a class="page-main__button button button--white" href="">Найти перевозчика</a>
+      </div>
+      <section class="page-main__slides">
+        <div class="main-slider">
+          <input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <input type="radio" id="btn-3" name="toggle">
+          <div class="main-slider__list">
+            <div id="sign-in" class="main-slider__item card">
+              <h2 class="card__title">Авторизуйтесь, в личный кабинет грузоотправителя</h2>
+              <div  class="card__body">
+                <div class="card__user-preview">
+                  <div class="card__load-photo">
+                    <img class="card__img" src="img/user-photo.png" width="756" height="334" alt="Фотография пользователя">
+                  </div>
+                  <input type="file" name="user-photo" accept="image/png, image/jpeg">
+                </div>
+                <div class="card__user-menu">
+                  <div>
+                    <label for="user-name">Email или Номер телефона</label>
+                    <input id="user-name" type="text">
+                  </div>
+                  <div>
+                    <label for="user-password">Пароль</label>
+                    <input id="user-password" type="text">
+                  </div>
+                  <a class="card__button button button--gray" href="">Регистрация</a>
+                  <a class="card__button button button--gray" href="">Вход</a>
+                  <a class="card__link" href="">Забыли пароль?</a>
+                </div>
+              </div>
+              <p class="card__slogan">Получите удобный инструмент размещения заявок на перевозку грузов и их отслеживания</p>
+            </div>
+            <div class="main-slider__item">
+
+            </div>
+            <div class="main-slider__item">
+
+            </div>
+          </div>
+          <div class="main-slider__controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+          <div class="main-slider__arrow-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/all.js"></script>
+    <script>document.createElement( "picture" );</script> <!--Скрипт для работы тега picture в ie11-->
+    <script>svg4everybody();</script> <!--Скрипт для вставки SVG в ie11-->
+  </body>
+</html>

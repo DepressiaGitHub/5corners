@@ -1,0 +1,12 @@
+.page-header {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #12033c;
+  z-index: 9;
+}
+
+.page-header--white {
+  background-color: #ffffff;
+}

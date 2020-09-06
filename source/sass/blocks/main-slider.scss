@@ -1,0 +1,124 @@
+.main-slider {
+  position: relative;
+  width: 1700px;
+  margin: 0 auto;
+}
+
+.main-slider input[type="radio"] {
+  display: none;
+}
+
+.main-slider__controls {
+  text-align: center;
+  margin: 55px auto;
+}
+
+.main-slider__controls label {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+#btn-1:checked ~ .main-slider__controls label[for="btn-1"],
+#btn-2:checked ~ .main-slider__controls label[for="btn-2"],
+#btn-3:checked ~ .main-slider__controls label[for="btn-3"] {
+  background-color: #ffffff;
+}
+
+#btn-1:checked ~ .main-slider__list {
+  transform: translate(0);
+}
+
+#btn-2:checked ~ .main-slider__list {
+  transform: translate(calc(-100% - 60px));
+}
+
+#btn-3:checked ~ .main-slider__list {
+  transform: translate(calc(-200% - 120px));
+}
+
+#btn-1:checked ~ .main-slider__arrow-controls label[for="btn-2"],
+#btn-2:checked ~ .main-slider__arrow-controls label[for="btn-3"],
+#btn-3:checked ~ .main-slider__arrow-controls label[for="btn-1"] {
+  position: absolute;
+  content: "";
+  top: 330px;
+  right: 110px;
+  width: 48px;
+  height: 88px;
+  display: block;
+  cursor: pointer;
+  background-image: url("../img/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  opacity: 0.3;
+  transition: opacity 0.3s;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+#btn-1:checked ~ .main-slider__arrow-controls label[for="btn-3"],
+#btn-2:checked ~ .main-slider__arrow-controls label[for="btn-1"],
+#btn-3:checked ~ .main-slider__arrow-controls label[for="btn-2"] {
+  position: absolute;
+  content: "";
+  top: 330px;
+  left: 110px;
+  width: 48px;
+  height: 88px;
+  display: block;
+  cursor: pointer;
+  background-image: url("../img/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  transform: rotate(180deg);
+  opacity: 0.3;
+  transition: opacity 0.3s;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.main-slider__list {
+  transition: 0.8s ease;
+  display: flex;
+}
+
+.main-slider__item {
+  margin-right: 60px;
+  width: 1700px;
+  min-width: 1700px;
+  height: 750px;
+  background-color: #ffffff;
+  border-radius: 40px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
