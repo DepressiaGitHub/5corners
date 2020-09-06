@@ -79,6 +79,7 @@
   .page-main__title {
     font-size: 66px;
     line-height: 78px;
+    margin-bottom: 30px;
   }
 
   .page-main__slogan {
@@ -97,5 +98,46 @@
 
   .page-main__slides {
     min-width: 900px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-main {
+    padding-top: 84px;
+  }
+
+  .page-main__planet {
+    height: 600px;
+    min-width: 600px;
+    background-size: 900px;
+  }
+
+  .page-main__wrapper {
+    width: 600px;
+    padding: 40px 0;
+  }
+
+  .page-main__title {
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 20px;
+  }
+
+  .page-main__slogan {
+    width: 400px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .page-main__button {
+    width: 140px;
+    font-size: 10px;
+    line-height: 14px;
+    padding: 5px 10px;
+    margin-top: 20px;
+  }
+
+  .page-main__slides {
+    min-width: 600px;
   }
 }

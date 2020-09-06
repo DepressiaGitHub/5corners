@@ -94,3 +94,27 @@
     width: 5px;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .job-list__item {
+    margin-right: 15px;
+  }
+
+  .job-list__item a {
+    font-size: 8px;
+    line-height: 12px;
+    padding: 15px 0;
+  }
+
+  .job-list__item--sub-menu::before {
+    width: 4px;
+    left: calc(50% - 2px);
+    bottom: 8px;
+  }
+
+
+  .job-list__item--sub-menu::after {
+    width: 4px;
+    bottom: 8px;
+  }
+}

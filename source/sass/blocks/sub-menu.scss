@@ -23,3 +23,23 @@
   background-color: #ffffff;
   color: #004460;
 }
+
+@media (max-width: $desktop-width) {
+  .sub-menu {
+    top: 40px;
+  }
+
+  .sub-menu a {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .sub-menu {
+    top: 30px;
+  }
+
+  .sub-menu a {
+    padding: 5px 0;
+  }
+}

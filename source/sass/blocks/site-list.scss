@@ -50,3 +50,15 @@
     padding: 20px 0;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .site-list__item {
+    margin-right: 20px;
+  }
+
+  .site-list__item a {
+    font-size: 8px;
+    line-height: 12px;
+    padding: 15px 0;
+  }
+}

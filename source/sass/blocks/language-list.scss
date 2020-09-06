@@ -52,3 +52,19 @@
     left: 24px;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .language-list {
+    margin-right: 20px;
+    font-size: 8px;
+    line-height: 12px;
+  }
+
+  .language-list__item {
+    margin-right: 10px;
+  }
+
+  .language-list::before {
+    left: 15px;
+  }
+}

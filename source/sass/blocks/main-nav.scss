@@ -29,6 +29,7 @@
   background-image: url("../img/logo.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100%;
 
   &:hover,
   &:focus {
@@ -84,5 +85,21 @@ a.main-nav__make-offer {
   a.main-nav__make-offer {
     font-size: 12px;
     line-height: 16px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .main-nav__wrapper {
+    width: 600px;
+  }
+
+  a.main-nav__make-offer {
+    font-size: 8px;
+    line-height: 12px;
+  }
+
+  .main-nav__logo {
+    width: 80px;
+    margin-right: 20px;
   }
 }

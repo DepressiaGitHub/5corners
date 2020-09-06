@@ -5,8 +5,8 @@
 
 .card__title {
   margin: 0;
-  padding-bottom: 30px;
-  max-width: 900px;
+  margin-bottom: 30px;
+  width: 900px;
   font-weight: 700;
   font-size: 46px;
   line-height: 60px;
@@ -121,6 +121,13 @@
     flex-direction: column;
   }
 
+  .card__title {
+    width: 760px;
+    padding-bottom: 20px;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
   .card__slogan {
     margin: 0;
     padding-top: 30px;
@@ -147,5 +154,69 @@
   .card__user-menu > div {
     margin-bottom: 0;
     margin-top: 22px;
+  }
+}
+
+
+@media (max-width: $tablet-width) {
+  .card {
+    padding: 20px 30px;
+  }
+
+  .card__title {
+    width: 540px;
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .card__slogan {
+    padding-top: 10px;
+    width: 500px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .card__img {
+    max-width: 540px;
+    max-height: 240px;
+  }
+
+  .card__user-menu {
+    height: 160px;
+  }
+
+  .card__user-menu > div {
+    margin-bottom: 0;
+    margin-top: 22px;
+  }
+
+  .card__user-menu input {
+    width: 200px;
+    height: 40px;
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+
+  .card__user-menu label {
+    font-size: 8px;
+    line-height: 12px;
+  }
+
+  .card__link {
+    font-size: 8px;
+    line-height: 12px;
+    margin: 0;
+  }
+
+  .card__button {
+    width: 200px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .card__button:first-of-type {
+    margin-top: 40px;
   }
 }
