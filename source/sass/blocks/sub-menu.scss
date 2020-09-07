@@ -43,3 +43,9 @@
     padding: 5px 0;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .job-list__item:hover .sub-menu {
+    display: none;
+  }
+}

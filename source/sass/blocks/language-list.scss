@@ -68,3 +68,9 @@
     left: 15px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .language-list {
+    display: none;
+  }
+}

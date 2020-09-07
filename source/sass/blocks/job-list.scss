@@ -118,3 +118,44 @@
     bottom: 8px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .job-list__item--sub-menu::before,
+  .job-list__item--sub-menu::after {
+    display: none;
+  }
+
+  .job-list {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .job-list__item {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    border-top: 1px solid #3d315f;
+    border-bottom: 1px solid #000000;
+  }
+
+  .job-list__item a {
+    font-size: 16px;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  .job-list--closed {
+    display: none;
+  }
+
+  .job-list--nojs {
+    display: block;
+  }
+
+  .job-list--nojs ~ .main-nav__toggle {
+    display: none;
+  }
+}

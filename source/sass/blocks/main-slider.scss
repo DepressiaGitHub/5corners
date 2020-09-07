@@ -192,3 +192,36 @@
     height: 30px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .main-slider {
+    width: 360px;
+  }
+
+  .main-slider__item {
+    min-width: 360px;
+    border-radius: 20px;
+  }
+
+  .main-slider__controls {
+    margin: 5px auto;
+  }
+
+  .main-slider__controls label {
+    width: 8px;
+    height: 8px;
+    margin-right: 5px;
+  }
+
+  #btn-1:checked ~ .main-slider__arrow-controls label[for="btn-2"],
+  #btn-2:checked ~ .main-slider__arrow-controls label[for="btn-3"],
+  #btn-3:checked ~ .main-slider__arrow-controls label[for="btn-1"] {
+    display: none
+  }
+
+  #btn-1:checked ~ .main-slider__arrow-controls label[for="btn-3"],
+  #btn-2:checked ~ .main-slider__arrow-controls label[for="btn-1"],
+  #btn-3:checked ~ .main-slider__arrow-controls label[for="btn-2"] {
+    display: none;
+  }
+}

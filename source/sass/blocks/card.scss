@@ -220,3 +220,48 @@
     margin-top: 40px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .card__title {
+    display: none;
+  }
+
+  .card__slogan {
+    display: none;
+  }
+
+  .card__img {
+    max-width: 300px;
+    max-height: 130px;
+  }
+
+  .card__user-menu input {
+    width: 140px;
+    height: 30px;
+    padding: 5px 5px;
+    font-size: 12px;
+  }
+
+  .card__user-menu label {
+    padding: 0;
+  }
+
+  .card__button {
+    width: 140px;
+    height: 30px;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+
+  .card__button:first-of-type {
+    margin-top: 22px;
+  }
+
+  .card__user-menu {
+    height: 120px;
+  }
+
+  .card__user-menu > div {
+    margin-top: 10px;
+  }
+}

@@ -8,3 +8,9 @@
 .page-header--white {
   background-color: #ffffff;
 }
+
+@media (max-width: $mobile-width) {
+  .page-header {
+    position: relative;
+  }
+}

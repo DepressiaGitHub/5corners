@@ -79,3 +79,9 @@
     left: 27px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .user-list {
+    display: none;
+  }
+}

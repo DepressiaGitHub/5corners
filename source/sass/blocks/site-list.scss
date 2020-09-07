@@ -62,3 +62,9 @@
     padding: 15px 0;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .site-list {
+    display: none;
+  }
+}
