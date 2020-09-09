@@ -186,6 +186,10 @@
     transform: rotate(-45deg);
     transition: top 0.3s, transform 0.3s 0.5s;
   }
+
+  .main-nav__list.job-list--nojs ~ .main-nav__toggle {
+    display: none;
+  }
 }
 
 @media (max-width: $mobile-width) {
