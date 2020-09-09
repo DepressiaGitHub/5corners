@@ -95,6 +95,7 @@
 @media (max-width: $tablet-width) {
   .job-list {
     flex-direction: column;
+    margin: 0;
   }
 
   .job-list.job-list--closed {

@@ -177,13 +177,13 @@
 
   .job-list--opened ~ .main-nav__toggle > span::before {
     top: 0;
-    transform: rotate(45deg);
+    transform: rotate(135deg);
     transition: top 0.3s, transform 0.3s 0.5s;
   }
 
   .job-list--opened ~ .main-nav__toggle > span::after {
     top: 0;
-    transform: rotate(-45deg);
+    transform: rotate(225deg);
     transition: top 0.3s, transform 0.3s 0.5s;
   }
 
