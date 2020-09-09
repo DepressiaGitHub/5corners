@@ -18,6 +18,10 @@
 
 .language-list__item {
   margin-right: 20px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
 }
 
 .language-list__item input {
@@ -43,34 +47,6 @@
 
 @media (max-width: $desktop-width) {
   .language-list {
-    margin-right: 60px;
-    font-size: 12px;
-    line-height: 16px;
-  }
-
-  .language-list::before {
-    left: 24px;
-  }
-}
-
-@media (max-width: $tablet-width) {
-  .language-list {
-    margin-right: 20px;
-    font-size: 8px;
-    line-height: 12px;
-  }
-
-  .language-list__item {
-    margin-right: 10px;
-  }
-
-  .language-list::before {
-    left: 15px;
-  }
-}
-
-@media (max-width: $mobile-width) {
-  .language-list {
-    display: none;
+    margin-right: 1%;
   }
 }

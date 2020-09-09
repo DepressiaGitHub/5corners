@@ -74,60 +74,35 @@
 }
 
 @media (max-width: $desktop-width) {
+  .job-list {
+    justify-content: space-around;
+    margin-right: 2%;
+  }
+
   .job-list__item {
-    margin-right: 20px;
+    margin-right: 1%;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
 
   .job-list__item a {
-    font-size: 12px;
-    line-height: 16px;
-    padding: 20px 0;
-  }
-
-  .job-list__item--sub-menu::before {
-    width: 5px;
-    left: calc(50% - 3px);
-  }
-
-
-  .job-list__item--sub-menu::after {
-    width: 5px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: $tablet-width) {
-  .job-list__item {
-    margin-right: 15px;
+  .job-list {
+    flex-direction: column;
   }
 
-  .job-list__item a {
-    font-size: 8px;
-    line-height: 12px;
-    padding: 15px 0;
-  }
-
-  .job-list__item--sub-menu::before {
-    width: 4px;
-    left: calc(50% - 2px);
-    bottom: 8px;
-  }
-
-
-  .job-list__item--sub-menu::after {
-    width: 4px;
-    bottom: 8px;
-  }
-}
-
-@media (max-width: $mobile-width) {
-  .job-list__item--sub-menu::before,
-  .job-list__item--sub-menu::after {
+  .job-list.job-list--closed {
     display: none;
   }
 
-  .job-list {
-    flex-direction: column;
-    margin-top: 50px;
+  .job-list.job-list--opened {
+    display: block;
   }
 
   .job-list__item {
@@ -139,7 +114,11 @@
   }
 
   .job-list__item a {
-    font-size: 16px;
+    padding: 20px 0;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
 
     &:hover,
     &:focus {
@@ -147,15 +126,8 @@
     }
   }
 
-  .job-list--closed {
-    display: none;
-  }
-
-  .job-list--nojs {
-    display: block;
-  }
-
-  .job-list--nojs ~ .main-nav__toggle {
+  .job-list__item--sub-menu::before,
+  .job-list__item--sub-menu::after {
     display: none;
   }
 }

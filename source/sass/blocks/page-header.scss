@@ -5,12 +5,20 @@
   z-index: 9;
 }
 
+.page-header > div {
+  border-bottom: 1px solid #3d315f;
+
+  &:last-of-type {
+    border: none;
+  }
+}
+
 .page-header--white {
   background-color: #ffffff;
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: $tablet-width) {
   .page-header {
-    position: relative;
+    position: absolute;
   }
 }

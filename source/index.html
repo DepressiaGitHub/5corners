@@ -11,8 +11,8 @@
   </head>
   <body class="body">
     <header class="page-header">
-      <section class="main-nav">
-        <div class="main-nav__wrapper">
+      <div>
+        <div class="main-nav main-nav--upper">
           <ul class="main-nav__list language-list">
             <li class="language-list__item">
               <input type="radio" id="en" name="page-language">
@@ -23,23 +23,25 @@
               <label for="ru">RU</label>
             </li>
           </ul>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="tel:+78792226310">+7 (87922) 2-63-10</a>
-            </li>
-            <li class="site-list__item">
-              <a href="">О компании</a>
-            </li>
-            <li class="site-list__item">
-              <a href="">Рекламодателям</a>
-            </li>
-            <li class="site-list__item">
-              <a href="">База знаний</a>
-            </li>
-            <li class="site-list__item">
-              <a href="">Контакты</a>
-            </li>
-          </ul>
+          <nav aria-label="Основное навигация по сайту">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="tel:+78792226310">+7 (87922) 2-63-10</a>
+              </li>
+              <li class="site-list__item">
+                <a href="">О компании</a>
+              </li>
+              <li class="site-list__item">
+                <a href="">Рекламодателям</a>
+              </li>
+              <li class="site-list__item">
+                <a href="">База знаний</a>
+              </li>
+              <li class="site-list__item">
+                <a href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
           <ul class="main-nav__list user-list user-list--sign-in">
             <li class="user-list__item">
               <a href="#sign-in">Вход</a>
@@ -57,67 +59,70 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="main-nav">
-        <div class="main-nav__wrapper">
-          <a class="main-nav__logo" href="">
-            <span class="visually-hidden">Логотип компании Transhub 24.</span>
-          </a>
-          <ul class="main-nav__list job-list job-list--closed job-list--nojs">
-            <li class="job-list__item job-list__item--sub-menu">
-              <a href="">Найти перевозчика</a>
-              <ul class="sub-menu">
-                <li>
-                  <a href="">Слон</a>
-                </li>
-                <li>
-                  <a href="">Верблют</a>
-                </li>
-                <li>
-                  <a href="">Осёл</a>
-                </li>
-                <li>
-                  <a href="">Мул</a>
-                </li>
-              </ul>
-            </li>
-            <li class="job-list__item">
-              <a href="">Поиск груза</a>
-            </li>
-            <li class="job-list__item">
-              <a href="">Перевозчики</a>
-            </li>
-            <li class="job-list__item">
-              <a href="">Грузоотправители</a>
-            </li>
-            <li class="job-list__item job-list__item--sub-menu">
-              <a href="">Покупка и аренда техники</a>
-              <ul class="sub-menu">
-                <li>
-                  <a href="">Трактор</a>
-                </li>
-                <li>
-                  <a href="">Комбайн</a>
-                </li>
-                <li>
-                  <a href="">Электроплуг</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+      </div>
+      <div>
+        <div class="main-nav">
+          <div class="main-nav__logo">
+            <a href="">
+              <span class="visually-hidden">Логотип компании Transhub 24.</span>
+            </a>
+          </div>
+          <nav aria-label="Основная навигация по услугам">
+            <ul class="main-nav__list job-list job-list--closed job-list--nojs">
+              <li class="job-list__item job-list__item--sub-menu">
+                <a href="">Найти перевозчика</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="">Слон</a>
+                  </li>
+                  <li>
+                    <a href="">Верблют</a>
+                  </li>
+                  <li>
+                    <a href="">Осёл</a>
+                  </li>
+                  <li>
+                    <a href="">Мул</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="job-list__item">
+                <a href="">Поиск груза</a>
+              </li>
+              <li class="job-list__item">
+                <a href="">Перевозчики</a>
+              </li>
+              <li class="job-list__item">
+                <a href="">Грузоотправители</a>
+              </li>
+              <li class="job-list__item job-list__item--sub-menu">
+                <a href="">Покупка и аренда техники</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="">Трактор</a>
+                  </li>
+                  <li>
+                    <a href="">Комбайн</a>
+                  </li>
+                  <li>
+                    <a href="">Электроплуг</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <button class="main-nav__toggle" type="button">
+              <span></span>
+            </button>
+          </nav>
           <a class="main-nav__make-offer" href="">Разместить груз</a>
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
         </div>
-      </section>
+      </div>
     </header>
     <main class="page-main">
-      <section class="page-main__planet">
-      </section>
+      <div class="page-main__planet"></div>
       <div class="page-main__wrapper">
-        <h1 class="page-main__title">Компания Transhub 24</h1>
-        <p class="page-main__slogan">Наша цель — свести контакты грузоперевозчиков и грузовладельцев в одном месте, сделав их максимально удобными.</p>
+        <h1 class="page-main__title">Компания Transhub&nbsp;24</h1>
+        <p class="page-main__slogan">Наша цель — свести контакты грузоперевозчиков и грузовладельцев <br>в одном месте, сделав их максимально удобными.</p>
         <a class="page-main__button button button--white" href="">Найти перевозчика</a>
       </div>
       <section class="page-main__slides">
@@ -127,7 +132,7 @@
           <input type="radio" id="btn-3" name="toggle">
           <div class="main-slider__list">
             <div id="sign-in" class="main-slider__item card">
-              <h2 class="card__title">Авторизуйтесь, в личный кабинет грузоотправителя</h2>
+              <h2 class="card__title">Авторизуйтесь<span>, в личный кабинет грузоотправителя</span></h2>
               <div  class="card__body">
                 <div class="card__user-preview">
                   <div class="card__load-photo">
@@ -142,7 +147,7 @@
                   </div>
                   <div>
                     <label for="user-password">Пароль</label>
-                    <input id="user-password" type="text">
+                    <input id="user-password" type="password">
                   </div>
                   <a class="card__button button button--gray" href="">Регистрация</a>
                   <a class="card__button button button--gray" href="">Вход</a>
