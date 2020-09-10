@@ -118,6 +118,10 @@
     margin: 0;
     border-top: 1px solid #3d315f;
     border-bottom: 1px solid #000000;
+
+    &:last-of-type {
+      box-shadow: 0 1px 0 #3d315f;
+    }
   }
 
   .job-list__item a {
@@ -130,12 +134,40 @@
     &:hover,
     &:focus {
       text-decoration: none;
+      color: #0099ef;
+      transition: 0.3s;
     }
   }
 
   .job-list__item--sub-menu::before,
   .job-list__item--sub-menu::after {
     display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .job-list__item {
+    border-top: 1px solid #c8d7f4;
+    border-bottom: 1px solid #39b5fa;
+
+    &:last-of-type {
+      box-shadow: 0 1px 0 #c8d7f4;
+    }
+  }
+
+  .job-list__item a {
+    padding: 30px 0;
+
+    &:hover,
+    &:focus {
+      color: #004460;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .job-list__item a {
+    padding: 20px 0;
   }
 }
 
