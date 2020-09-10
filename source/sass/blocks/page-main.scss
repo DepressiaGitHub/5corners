@@ -130,7 +130,7 @@
   .page-main__planet {
     min-width: 360px;
     height: 660px;
-    background-size: 100%;
+    background-size: 660px;
     background-repeat: repeat, no-repeat;
   }
 
@@ -161,5 +161,12 @@
 
   .page-main__slides {
     min-width: 360px;
+  }
+}
+
+@media (max-width: 490px) {
+  .page-main__planet {
+    height: 580px;
+    background-size: 490px;
   }
 }
