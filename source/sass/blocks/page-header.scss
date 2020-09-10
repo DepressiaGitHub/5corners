@@ -20,5 +20,6 @@
 @media (max-width: $tablet-width) {
   .page-header {
     position: absolute;
+    min-width: 360px;
   }
 }

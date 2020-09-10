@@ -96,6 +96,8 @@
   .job-list {
     flex-direction: column;
     margin: 0;
+    animation-name: bounce;
+    animation-duration: 0.3s;
   }
 
   .job-list.job-list--closed {
@@ -134,5 +136,15 @@
   .job-list__item--sub-menu::before,
   .job-list__item--sub-menu::after {
     display: none;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
