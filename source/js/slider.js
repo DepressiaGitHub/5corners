@@ -4,11 +4,11 @@
   var slider = document.querySelector('.main-slider');
   var startX = 0;
 
-  var handleStart = function(evt){
+  var handleStart = function (evt) {
     startX = evt.changedTouches[0].pageX;
   };
 
-  var handleEnd = function(evt){
+  var handleEnd = function (evt) {
     var endX = evt.changedTouches[0].pageX;
     var checkedInputNumber = 0;
     var sliderInputs = document.querySelectorAll('.main-slider input[name=toggle]');
@@ -19,9 +19,9 @@
     });
 
     var resultCheckedInputNumber = checkedInputNumber;
-    if (endX - startX > 0) {
+    if (endX - startX > 100) {
       resultCheckedInputNumber = checkedInputNumber - 1;
-    } else if (endX - startX < 0) {
+    } else if (endX - startX < -100) {
       resultCheckedInputNumber = checkedInputNumber + 1;
     }
 
